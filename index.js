@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*", 
+    origin: "https://rust-project-upcs.vercel.app/", 
     methods: ["GET", "POST"],
   },
 });
@@ -22,7 +22,7 @@ const io = new Server(server, {
 
 app.use(
   cors({
-    origin:"*", 
+    origin:"https://rust-project-upcs.vercel.app/", 
     methods: ["GET", "POST" ], 
     headers: ["Content-Type"],
     credentials: true, 
